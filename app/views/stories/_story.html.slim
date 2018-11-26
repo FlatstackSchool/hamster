@@ -1,0 +1,7 @@
+.story-container
+  .story-title = story.title
+  .story-body = truncate(story.body, length: 64)
+  .story-actions
+    => link_to 'See more', story
+    => link_to 'Edit', edit_story_path(story)
+    = link_to 'Destroy', story, method: :delete, data: { confirm: 'Are you sure?' }
