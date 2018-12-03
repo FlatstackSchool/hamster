@@ -1,5 +1,10 @@
 .row
   .col-md-6.offset-md-3
+    - if current_user
+      strong> Signed in as #{current_user.email}
+      = link_to "Sign out", sessions_path, method: :delete
+.row
+  .col-md-6.offset-md-3
     h1 Stories
 
     = render @stories

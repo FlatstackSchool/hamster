@@ -1,0 +1,11 @@
+.row
+  .col-md-6.offset-md-3
+    h1 Sign up
+
+    = form_for @user do |f|
+      .form-group
+        = f.text_field :email
+      .form-group
+        = f.password_field :password
+      .form-group
+        = f.submit

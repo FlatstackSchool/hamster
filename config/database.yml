@@ -6,6 +6,9 @@ default: &default
 development:
   <<: *default
   database: hamster_dev
+  # username:
+  # password:
+  # host: 127.0.0.1
 
 test:
   <<: *default
